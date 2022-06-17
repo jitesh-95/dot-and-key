@@ -56,9 +56,10 @@
     .footermain{
         display: grid;
         grid-template-columns: repeat(1fr);
+        
     }
    .footermain>div{
-    width:50%;
+    width:80%;
     
    }
    
