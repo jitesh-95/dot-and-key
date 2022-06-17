@@ -3,7 +3,7 @@ import "./Account.css";
 import { useNavigate } from "react-router-dom"
 const Account = () => {
   const navigate = useNavigate()
-  var  userdata=JSON.parse(localStorage.getItem("userdedails"));
+  var  userdata=JSON.parse(localStorage.getItem("aftercheckingdedails"));
   console.log(userdata)
   return (
     <div className="accountmain">
@@ -21,11 +21,16 @@ const Account = () => {
             <h2>Account details</h2>
             <p></p>
             {/* {userdata.map((el)=>{
-                <p>{`${el.firstname}+${el.lastname}`}</p>
+              <>
+               <h4>{`${el.firstname} ${el.lastname}`}</h4>
+               <h2>{`${el.firstname} ${el.lastname}`}</h2>
+               </>
 
             })} */}
+            
             <h4>{`${userdata.firstname} ${userdata.lastname}`}</h4>
             <h2>{`${userdata.firstname} ${userdata.lastname}`}</h2>
+
             <p>India</p>
             <p>View addresses (1)</p>
         </div>

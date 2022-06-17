@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Signup.css";
 import { useNavigate } from "react-router-dom";
+var userData = JSON.parse(localStorage.getItem("userdedails"))||[]//change
 
 const Signup = () => {
   const navigate = useNavigate()
@@ -21,9 +22,11 @@ const Signup = () => {
   const handleOnSubmit=(e)=>{
     e.preventDefault();
     console.log(form)
-    localStorage.setItem("userdedails",JSON.stringify(form))
+    userData.push(form) 
+    localStorage.setItem("userdedails",JSON.stringify(userData ))
 
   }
+  
   return (
     <div className='signmain'>
       <h1>Create Account</h1>
@@ -66,7 +69,7 @@ const Signup = () => {
         <br/>
         
         <input className='input' type="password" name="password"  onChange={onChange}/>
-        <button type="submit" onClick={()=>navigate("/")}>create</button>
+        <button type="submit" >create</button>
       </form>
     </div>
   )
