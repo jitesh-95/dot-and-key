@@ -216,7 +216,6 @@ const Contact = () => {
       </div>
       </form>
      
-      Form
       {/* <form onSubmit={handleOnsubmit}>
         <div>
           <label>Name:</label>

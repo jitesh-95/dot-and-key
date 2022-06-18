@@ -1,0 +1,27 @@
+.nav{
+    /* border: 1px solid red; */
+    height: 109px;
+    width: 100%;
+    display: flex;
+    position:fixed;
+    /* zIndex:sticky; */
+    background-color: white;
+    top:0;
+    left:0;
+    right:0;
+}
+.logo{
+    /* margin: auto; */
+    margin-left: 30%;
+    /* border: 1px solid red; */
+}
+
+
+.icons{
+    display: flex;
+    /* border: 3px solid red; */
+    height: 55px;
+    width: 150px;
+    margin-left: 20%;   
+    margin-top: 20px;
+}
