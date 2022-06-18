@@ -53,7 +53,7 @@ label{
     display: flex;
     justify-content: space-between;
 }
-button{
+.SIGNBTN{
     margin-top: 25px;
     height:13%;
     width:100%;
