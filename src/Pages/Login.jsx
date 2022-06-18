@@ -106,7 +106,7 @@ const Login = () => {
         <br/>
         
         <input className='input' type="password" name="password" onChange={onchange}/>
-        <button type='submit'>sign in</button>
+          <button type='submit' className='SIGNBTN'>sign in</button>
       </form>
      <p className='lisign'><Link  to="signup" style={{ color:" #50504b"}}>Don't have an account? Sign up here.</Link></p>
 
