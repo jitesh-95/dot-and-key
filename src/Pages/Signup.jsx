@@ -69,7 +69,7 @@ const Signup = () => {
         <br/>
         
         <input className='input' type="password" name="password"  onChange={onChange}/>
-        <button type="submit" >create</button>
+        <button type="submit" className='createbtn' >create</button>
       </form>
     </div>
   )
