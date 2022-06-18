@@ -1,0 +1,65 @@
+.right{
+    height: 500px;
+   border-radius: 20px;
+}
+.one{
+    height: 100px;
+margin: 5px;
+border-radius: 10px;
+
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 20px;
+    gap: 30px;
+    margin-left: 15%;
+}
+
+.maina{
+    display: flex;
+    
+    /* justify-content: center; */
+}
+.clip {
+    background:black;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+  }
+  .pink{
+    height: 500px;
+    width: 500px;
+    background-color: pink;
+    border-radius: 10px;
+    text-align: center;
+    
+  }
+  .second{
+    text-align: center;
+  }
+  .secondA{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 60px;
+  }
+  hr{
+    width: 80%;
+  }
+  .reviwes{
+    /* display: flex; */
+    margin-left:10px ;
+    justify-content: space-evenly;
+    
+  }
+  .reviews2{
+    /* justify-content: space-between; */
+    /* display: flex; */
+    
+  }
+  
+  
