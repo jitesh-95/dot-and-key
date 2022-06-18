@@ -23,7 +23,7 @@ const Home = () => {
     <div>
       <div className={styles.productsCategories}>
         <div>
-          <Link to="/products" className={styles.cosmaticsImage}>
+          <Link to="/product" className={styles.cosmaticsImage}>
             <img src="../.././homeAssets/cosmatics.jpg" alt="" />
             <p>COSMETICS</p>
           </Link>
