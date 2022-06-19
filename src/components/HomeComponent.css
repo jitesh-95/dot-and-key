@@ -1,0 +1,193 @@
+.carousel-control-prev {
+  width: 2% !important;
+}
+.carousel-control-next {
+  width: 2% !important;
+}
+.carousel-item > a > img {
+  border-radius: 10px;
+}
+.firstSlider > .carousel-indicators {
+  bottom: -10% !important;
+}
+.firstSlider > .carousel-indicators > button {
+  border-radius: 50%;
+  width: 11px !important;
+  height: 10px !important;
+}
+.secondSlider > .carousel-indicators > button {
+  border-radius: 50%;
+  width: 11px !important;
+  height: 10px !important;
+  background-color: black !important;
+}
+.secondSlider > .carousel-indicators {
+  bottom: -15% !important;
+}
+.carousel-item {
+  transition: transform 1s cubic-bezier(0.13, 0.35, 0.64, 0.95) !important;
+}
+/* ================================ */
+/* center clider */
+.firstCenterSlider {
+  margin: auto;
+  width: 80%;
+}
+.centerSlider {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 50px auto;
+  width: 17%;
+  font-family: Roboto;
+  transform: scale(0.65);
+}
+.myactiveSlider {
+  transform: scale(0.9);
+}
+.centerSlider > img {
+  width: 100%;
+  border-radius: 8px;
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  font-size: 16px;
+  margin: 5px 0 10px 0;
+}
+.ratings > p {
+  margin: 0;
+}
+.ratings > p > svg {
+  color: #ecc94b;
+}
+.ratings > p > span {
+  color: blue;
+}
+.sliderheading {
+  font-size: 18px;
+  padding: 0 7px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 30px;
+}
+.sliderPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.sliderPrice > p:nth-child(1) {
+  margin-right: 5px;
+  text-decoration: line-through;
+  margin: 5px;
+}
+.sliderPrice > p:nth-child(2) {
+  color: red;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.sliderAddToCart {
+  width: 100%;
+  border: none;
+  background-color: #7b7b7b;
+  color: white;
+  font-size: 17px;
+  padding: 2% 0;
+  box-sizing: border-box;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 9px;
+}
+.sliderAddToCart:focus {
+  outline: none;
+}
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  font-size: 25px;
+  z-index: 10;
+}
+.arrow svg {
+  transition: color 300ms;
+}
+.next {
+  right: 0;
+  top: 50%;
+}
+.prev {
+  left: 0;
+  top: 50%;
+}
+/* ===================================== */
+/* customer review */
+/* from center slider*/
+
+.customerReviewsParentBox {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+  font-family: Roboto;
+}
+.CustomerReview {
+  transform: scale(0.6);
+}
+.activeCustomerReview {
+  transform: scale(0.9);
+}
+.ReviewProduct {
+  width: 85%;
+  margin: auto;
+}
+.ReviewProduct > img {
+  width: 100%;
+  border-radius: 15px;
+}
+.ReviewQuote {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 75%;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.ActualReview {
+  font-size: 17px;
+  margin: 0;
+  margin-top: 6px;
+}
+.ActualReview + p {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 5px;
+  text-align: end;
+}
+.ReviewHearts {
+  font-size: 14px;
+  color: #ecc94b;
+}
+/* =========================== */
+/* journal slider  */
+/* from home first slider  */
+.JournalSlider {
+  text-align: center;
+  font-family: Roboto;
+}
+.JournalSlider > p {
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  width: 80%;
+}
+.JournalSlider > button {
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  /* padding: 3px 10px; */
+  border-radius: 20px;
+  width: 25%;
+}

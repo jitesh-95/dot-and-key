@@ -1,0 +1,98 @@
+.loginmain{
+    width: 40%;
+    height:700px;
+    margin:auto;
+    /* border: 1px solid red; */
+}
+h1{
+    text-align: center;
+}
+.facebook{
+    width:70%;
+    height:8%;
+    display: flex;
+    
+    margin: auto;
+    /* border:1px solid red; */
+}
+.google{
+    width:70%;
+    height:8%;
+    display: flex;
+    margin: auto;
+    
+    /* border:1px solid red; */
+}
+.google>div{
+    background-color: 
+    #e4002b;
+}
+.google>div:hover{
+    background-color: 
+    #df1439d2; 
+}
+.input{
+    
+    height:13%;
+    width:98%
+   
+}
+.form{
+    width:70%;
+    height: 50%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+label{
+    font-size: 20px;
+   
+
+}
+.la{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.SIGNBTN{
+    margin-top: 25px;
+    height:13%;
+    width:100%;
+    font-size: 20px;
+    border:none;
+    background-color: #50504b;
+    color: white;
+    cursor: pointer;
+
+}
+.fa{
+    background-image: url("https://bit.ly/39v8M70");
+    background-repeat: no-repeat;
+    background-size: 105% 110%;
+    background-color: 
+    #2152b4;
+    width:10%;
+    height:100%;
+    border:1px solid green;
+}
+.fa1{
+    text-align: center;
+    background-color: 
+    #1d4594;
+    padding: 10px;
+    color:white;
+    width: 100%;
+}
+.fa1:hover{
+    background-color: #0d32aac4; ;
+}
+.signlink{
+    text-align: center;
+    
+}
+
+.lisign{
+  text-align: center;
+  margin-top: -6px;
+  
+}
+

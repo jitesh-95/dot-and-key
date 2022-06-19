@@ -1,0 +1,29 @@
+.accountmain{
+    width:100%;
+    height:600px;
+    /* border:1px solid red; */
+    
+    
+}
+.accountmain1{
+    display: flex;
+}
+
+.acch1{
+    margin: auto;
+}
+.loutbtn{
+    width:100px;
+    display: block;
+    margin: auto;
+    color: grey;
+    background-color: white;
+    text-decoration: underline;
+
+}
+.ac1{
+    width:50%;
+    height:370px;
+    /* border:1px solid green; */
+    padding: 10%;
+}

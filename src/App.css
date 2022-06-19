@@ -1,0 +1,65 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+
+.rewardButton{
+    display: flex;
+    align-items: center;
+    background-color: #9d88ce;
+    max-width: max-content;
+    color: white;
+    padding: 10px 20px ;
+    border-radius: 30px;
+    gap: 6px;
+    bottom: 3%;
+    right: 1.5%;
+    position: fixed;
+}
+.rewardButton>p{
+    margin: 0;
+}
+.rewardButton>svg{
+    font-size:35px;
+}
+
+/* ============================================ */
+ .carousels{ 
+    margin-bottom: 100px;;
+    margin-left: -103px;
+    /* margin-right: 10px; */
+    width:120%;
+    margin-top:20px;
+   
+    
+ } 
+
+.d-block {
+    border-radius: 20px;
+} 
+/* .wipped{
+    margin-top: 50px;
+    margin-left:-30px;
+margin-right: 100%;
+
+    
+}  */
+.name{
+    padding-top: 40px;;
+    text-align: "center";
+    padding-bottom: 30px;
+    /* padding-left:5%; */
+
+} 
+
+.tem-img{
+    /* padding-right: 40px; */
+    margin-bottom: "100px";
+    border-radius: 10px;
+    padding-left: 20px; 
+
+   padding-bottom: "40px"; 
+}
+.template{
+margin-left: 15%;;
+} 
