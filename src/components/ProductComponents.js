@@ -7,15 +7,8 @@ import { ProductsSlider } from "./ProductsSlider";
 const ProductComponent = () => {
   const products = useSelector((state) => state.allProducts.products);
   const renderList = products.map((product) => {
-    const {
-      id,
-      img1,
-      name,
-      rating,
-      price,
-   
-    } = product;
-    <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-SPREAD-THE-LOVE-Desktop-Final_3.png?v=1638165803"></img>;
+    const { id, img1, name, rating, price } = product;
+    // <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-SPREAD-THE-LOVE-Desktop-Final_3.png?v=1638165803"></img>;
     return (
       <Card style={{ width: "18rem", margin: "10px", gap: "40px" }} key={id}>
         <Link to={`/product/${id}`}>
@@ -41,7 +34,6 @@ const ProductComponent = () => {
 
   return (
     <>
-      
       <ProductsSlider />
       {renderList}
     </>
