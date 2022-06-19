@@ -21,7 +21,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/account" element={<Account />} />
         <Route path="/product" element={<ProductListing />} />
-        <Route path="/product/:productId" element={<SinglePage/>} />
+        <Route path="/product/:id" element={<SinglePage/>} />
         <Route>404 Not Found!</Route>
       </Routes>
       <Footer />

@@ -1,4 +1,4 @@
-import React, { useState,Component } from 'react'
+import React, { useState } from 'react'
 import  { useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
@@ -10,33 +10,34 @@ const RightBar = () => {
   // state={
   //   productData:[],
   // }
-
+ 
   
   const {id}=useParams();
+// console.log(id)
   const [product,setProduct]=useState({});
-
+console.log(product)
   useEffect(()=>{
-    if(id){
-      fetch('https://netmedsbackend.herokuapp.com/data/1')
-      .then((r)=>r.json)
     
-      .then((d)=>setProduct(d));
-    }
-
+      fetch(`http://localhost:8080/products/${id}`)
+      .then((r)=>r.json())
+    
+      .then((d)=>
+                 setProduct(d));
+    
   
-  })
+  },[]);
   return (
 <>
  <div >
 
 
 
-<img  className={styles.right}src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_720x.jpg?v=1644862704" alt='img'/>
+<img  className={styles.right}src={product.img1} alt='img'/>
 <div >
-    <img  className={styles.one}src='https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_720x.jpg?v=1644862704' alt="img"/>
-    <img  className={styles.one}src='https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_720x.jpg?v=1644862704' alt="img"/>
-    <img  className={styles.one}src='https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_720x.jpg?v=1644862704' alt="img"/>
-    <img  className={styles.one}src='https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_720x.jpg?v=1644862704' alt="img"/>
+    <img  className={styles.one}src={product.img1}alt="img"/>
+    <img  className={styles.one}src={product.img2}alt="img"/>
+    <img  className={styles.one}src={product.img3} alt="img"/>
+    <img  className={styles.one}src={product.img4}alt="img"/>
 </div>
 <div className={styles.pink}>
     <h3>Perks To Love</h3>

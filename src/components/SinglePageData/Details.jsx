@@ -1,19 +1,43 @@
 import React from 'react'
-// import  { useEffect } from "react";
+import  { useEffect,useState } from "react";
 // import { useDispatch, useSelector } from "react-redux";
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 // import { getSingleProduct } from "../redux/action";
 import styles from "./singlePage.module.css";
 
 
 const Details = () => {
+  const [cart,setCart]=React.useState({});
+  const {id}=useParams();
+  const [product,setProduct]=useState({});
+
+  useEffect(()=>{
+    fetch(`http://localhost:8080/products/${id}`)
+    .then((r)=>r.json())
+    .then((d)=>setProduct(d));
+  })
+
+  const handleChange=(e)=>{
+    console.log('hhh');
+    fetch(`http://localhost:8080/cart`,{
+      method:"POST",
+      headers:{
+        "content-type":"application/json",
+      },
+      body:JSON.stringify
+      ({
+        ...product,
+      })
+    })
+  
+  }
   return (
     <>
     <div className={styles.second}>
 <h2>Made with LOve</h2>
-<img  src='https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-Cocoa-Body-Butter.png?v=1638788816' alt='img'/>
+<img  src={product.img3} alt='img'/>
 <h2 className={styles.second}>Slather not Slurp</h2>
-<img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/cocoa_butter_1.jpg?v=1638789166" alt="img" />
+<img src={product.img4} alt="img" />
 
 <div className={styles.secondA}>
   <h3>Who'll love it?</h3>
@@ -40,7 +64,7 @@ const Details = () => {
 </div>
 <hr />
 <div className={styles.secondA}>
-  <h3>Benefits</h3>
+  <h3>Benefits  .......?</h3>
   <h1>+</h1>
 </div>
 <hr />
@@ -200,7 +224,7 @@ const Details = () => {
     
     </div>
     <hr />
-<button style={{width:'50%',backgroundColor:"grey",height:"30px",marginLeft:'25%'}}>ADD TO CART</button>
+<button style={{width:'50%',backgroundColor:"grey",height:"50px",marginLeft:'25%'}} onClick={handleChange}>ADD TO CART</button>
     
     </>
   )
